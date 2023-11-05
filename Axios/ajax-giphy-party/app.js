@@ -11,7 +11,8 @@ async function getSearch(term){
 
         let resultArray = res.data.data; 
         let randomNum = Math.floor(Math.random() * resultArray.length);
-        let resultUrl = resultArray[randomNum].url;
+        console.log(resultArray)
+        let resultUrl = resultArray[randomNum].embed_url;
 
     const img = document.createElement('img');
     img.src = resultUrl;
