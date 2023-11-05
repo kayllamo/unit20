@@ -13,11 +13,11 @@ async function getSearch(term){
         let randomNum = Math.floor(Math.random() * resultArray.length);
         let resultUrl = resultArray[randomNum].url;
 
-    const results = document.querySelector('#results');
     const img = document.createElement('img');
     img.src = resultUrl;
-    results.appendChild(img);
-    return results;
+    resultsDiv.appendChild(img);
+    console.log(results)
+    return resultsDiv;
 
 }
 
@@ -30,4 +30,14 @@ form.addEventListener('submit', function (e){
     e.preventDefault();
     getSearch(input.value);
     input.value = ''
+})
+
+
+//Clears Results Div
+let resultsDiv = document.querySelector('#results');
+const clearBtn = document.querySelector('#clear');
+
+clearBtn.addEventListener('click', function (e){
+    e.preventDefault();
+    resultsDiv.innerHTML = '';
 })
