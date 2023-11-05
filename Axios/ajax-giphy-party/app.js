@@ -16,7 +16,8 @@ async function getSearch(term){
     const results = document.querySelector('#results');
     const img = document.createElement('img');
     img.src = resultUrl;
-    img.append(results);
+    results.appendChild(img);
+    return results;
 
 }
 
