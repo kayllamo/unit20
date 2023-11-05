@@ -1,0 +1,39 @@
+* {
+background-color: black;
+ color: white;
+ margin: 0 auto;
+}
+
+h1, form {
+    text-align: center;
+    padding: 50px 0 0 0;
+    font-size: 5rem;
+}
+
+input {
+    background-color: white;
+    color:black;
+    height: 2rem;
+    width: 30rem;
+}
+
+button {
+    background-color: white;
+    color: black;    
+    height: 2rem;
+    width: 10rem;
+}
+
+
+#clear {
+    background-color: red;
+    color: white;
+}
+
+iframe {
+    border: none;
+}
+
+#results {
+    margin: 2rem 0 0 0;
+}

@@ -14,9 +14,9 @@ async function getSearch(term){
         console.log(resultArray)
         let resultUrl = resultArray[randomNum].embed_url;
 
-    const img = document.createElement('img');
-    img.src = resultUrl;
-    resultsDiv.appendChild(img);
+    const iframe = document.createElement('iframe');
+    iframe.src = resultUrl;
+    resultsDiv.appendChild(iframe);
     console.log(results)
     return resultsDiv;
 
@@ -42,3 +42,5 @@ clearBtn.addEventListener('click', function (e){
     e.preventDefault();
     resultsDiv.innerHTML = '';
 })
+
+//<iframe src="https://giphy.com/embed/QrxfVTP2t34WQtpt8o" width="480" height="267" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
